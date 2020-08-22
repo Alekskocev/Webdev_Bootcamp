@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <form>
+        <!-- First Name & Last Name -->
+<label id="firstName" name="firstName" for="firstName" value="firstName">First Name:</label>
+<input type="text" for="firstName" required>
+
+<label id="lastName" name="lastName" for="lastName" value="lastName">Last Name:</label>
+<input type="text" for="lastName" required>
+ <!-- Gender Selection -->
+<label id="Male"  value="Male">Male</label>
+<input for="Male" name="gender" type="radio">
+
+<label id="Female"  value="Female">Female</label>
+<input for="Female" name="gender" type="radio">
+
+<!-- Email & Password -->
+<label id="email"  value="">Email:</label>
+<input for="email" name="email" type="email" required>
+
+<label id="password"  value="">Password:</label>
+<input for="password" name="password" type="password" required minlength="5" maxlength="10">
+
+<!-- Birthday -->
+<label id="Birthday"  value="">Birthday:</label>
+<select name="Month">
+    <option name="Birthday">January</option>
+    <option name="Birthday">February</option>
+    <option name="Birthday">March</option>
+</select>
+<select name="day">
+    <option name="Birthday">1</option>
+    <option name="Birthday">2</option>
+    <option name="Birthday">3</option>
+</select>
+<select name="year">
+    <option name="Birthday">1986</option>
+    <option name="Birthday">1987</option>
+    <option name="Birthday">1988</option>
+</select>
+<!-- Terms and Conditions -->
+<label id="TNC">I agree to the terms and conditions</label>
+<input type="checkbox" name="TNC" value="agreed" required>
+
+<button type="submit">Submit</button>
+    </form>
+</body>
+</html>
